@@ -11,6 +11,7 @@ export default function PhoneNumberInput(props: FormControlProps) {
     <>
       <input
         type="text"
+        placeholder="Phone Number"
         value={value}
         {...otherProps}
         onChange={(e) => {

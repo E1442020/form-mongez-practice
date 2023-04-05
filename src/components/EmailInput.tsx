@@ -7,6 +7,7 @@ export default function EmailInput(props: FormControlProps) {
     <>
     <input
       type="email"
+      placeholder='Email'
       value={value}
       onChange={e => {
         changeValue(e.target.value);

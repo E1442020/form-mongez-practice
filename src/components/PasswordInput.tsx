@@ -7,6 +7,7 @@ export default function PasswordInput(props: FormControlProps) {
     <>
     <input
       type="password"
+      placeholder='Password'
       value={value}
       onChange={e => {
         changeValue(e.target.value);
