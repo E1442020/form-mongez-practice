@@ -5,7 +5,7 @@ import {
   requiredRule,
 } from "@mongez/react-form";
 export default function PhoneNumberInput(props: FormControlProps) {
-  const { value, changeValue, error,otherProps} = useFormControl(props);
+  const { value, changeValue, error, otherProps } = useFormControl(props);
 
   return (
     <>
@@ -16,13 +16,13 @@ export default function PhoneNumberInput(props: FormControlProps) {
         {...otherProps}
         onChange={(e) => {
           let value = e.target.value;
-          if (!value.startsWith('+2')) {
+          if (!value.startsWith("+2")) {
             value = "+2" + value;
           }
           changeValue(value);
         }}
       />
-      {error && <p>{error}</p>}
+      {error && <span>{error}</span>}
     </>
   );
 }
